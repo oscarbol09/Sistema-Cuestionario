@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Documento</title>
+</head>
+
+<body>
+
+    <h1>SISTEMA DE EVALUACION</h1>
+    <form name="cuestionario">
+
+        <div class="recuadro">
+            <p class="titulo" id="pregunta"></p>
+            <div id="img_p1"></div>
+            <ul>
+                <li><input id="opc1_1" name="p1" type="radio"><label for="opc1_1" id="t_opc1"></label></li>
+                <li><input id="opc1_2" name="p1" type="radio"><label for="opc1_2" id="t_opc2"></label></li>
+                <li><input id="opc1_3" name="p1" type="radio"><label for="opc1_3" id="t_opc3"></label></li>
+                <li><input id="opc1_4" name="p1" type="radio"><label for="opc1_4" id="t_opc4"></label></li>
+            </ul>
+        </div>
+        <div class="recuadro">
+            <p class="titulo" id="pregunta2"></p>
+            <div id="img_p2"></div>
+            <ul>
+                <li><input id="opc2_1" name="p2" type="radio"><label for="opc2_1" id="t2_opc1"></label></li>
+                <li><input id="opc2_2" name="p2" type="radio"><label for="opc2_2" id="t2_opc2"></label></li>
+                <li><input id="opc2_3" name="p2" type="radio"><label for="opc2_3" id="t2_opc3"></label></li>
+
+            </ul>
+        </div>
+
+        <div class="recuadro">
+            <p class="titulo" id="pregunta3"></p>
+            <div id="img_p3"></div>
+            <ul>
+                <li><input id="opc3_1" name="p3" type="radio"><label for="opc3_1" id="t3_opc1"></label></li>
+                <li><input id="opc3_2" name="p3" type="radio"><label for="opc3_2" id="t3_opc2"></label></li>
+                <li><input id="opc3_3" name="p3" type="radio"><label for="opc3_3" id="t3_opc3"></label></li>
+
+            </ul>
+        </div>
+
+        <div class="recuadro">
+            <p class="titulo" id="pregunta4"></p>
+            <div id="img_p4"></div>
+            <ul>
+                <li><input id="opc4_1" name="p4" type="radio"><label for="opc4_1" id="t4_opc1"></label></li>
+                <li><input id="opc4_2" name="p4" type="radio"><label for="opc4_2" id="t4_opc2"></label></li>
+                <li><input id="opc4_3" name="p4" type="radio"><label for="opc4_3" id="t4_opc3"></label></li>
+
+            </ul>
+        </div>
+
+        <div class="recuadro">
+            <p class="titulo" id="pregunta5"></p>
+            <div id="img_p5"></div>
+            <ul>
+                <li><input id="opc5_1" name="p5" type="radio"><label for="opc5_1" id="t5_opc1"></label></li>
+                <li><input id="opc5_2" name="p5" type="radio"><label for="opc5_2" id="t5_opc2"></label></li>
+                <li><input id="opc5_3" name="p5" type="radio"><label for="opc5_3" id="t5_opc3"></label></li>
+
+            </ul>
+        </div>
+
+        <div class="recuadro">
+            <p class="titulo" id="pregunta6"></p>
+            <div id="img_p6"></div>
+            <ul>
+                <li><input id="opc6_1" name="p6" type="radio"><label for="opc6_1" id="t6_opc1"></label></li>
+                <li><input id="opc6_2" name="p6" type="radio"><label for="opc6_2" id="t6_opc2"></label></li>
+                <li><input id="opc6_3" name="p6" type="radio"><label for="opc6_3" id="t6_opc3"></label></li>
+
+            </ul>
+        </div>
+
+
+
+    </form>
+    <button class="boton" onclick="evaluar();">Evaluar</button>
+    <div class="resultados">
+        <p>
+            <font color="green">Preguntas Correctas : <span id="correctas"></font></span>
+        </p>
+        <p>
+            <font color="red">Preguntas Incorrectas : <span id="incorrectas"></font></span>
+        </p>
+    </div>
+
+
+    <script src="codigo.js"></script>
+</body>
+
+</html>
